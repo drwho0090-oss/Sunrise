@@ -32,6 +32,7 @@ bool initialize(void* module) noexcept {
     movement::initialize(module);
     player::initialize(module);
     spawn::initialize(module);
+
     return ui::runtime::initialize();
 }
 
@@ -105,6 +106,7 @@ bool shutdown() noexcept {
     ui::runtime::shutdown();
     spawn::shutdown();
     player::shutdown();
+
     movement::shutdown();
     core::log::write(core::log::Channel::client, core::log::Level::info, "ev=shutdown result=ok");
     ReleaseSRWLockExclusive(&runtime::g_lock);

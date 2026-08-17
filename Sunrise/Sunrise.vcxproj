@@ -208,6 +208,9 @@
     <ClCompile Include="src\client\movement\movement_settings_store.cpp" />
     <ClCompile Include="src\client\ui\player\player_panel.cpp" />
     <ClCompile Include="src\client\player\player_settings_store.cpp" />
+    <ClCompile Include="src\client\spawn\spawn_keybind_store.cpp" />
+    <ClCompile Include="src\client\content\entity_names\entity_name_cache.cpp" />
+    <ClCompile Include="src\client\content\entity_names\localized_aliases.cpp" />
     <ClCompile Include="src\client\hooks\noclip\horizontal_noclip.cpp" />
     <ClCompile Include="src\client\hooks\sword_skate\sword_skate.cpp" />
     <ClCompile Include="src\client\hooks\fly\fly.cpp" />
@@ -216,6 +219,7 @@
     <ClCompile Include="src\client\hooks\teleport\teleport_lifecycle.cpp" />
     <ClCompile Include="src\client\hooks\teleport\teleport_move.cpp" />
     <ClCompile Include="src\client\hooks\teleport\teleport_action_key.cpp" />
+    <ClCompile Include="src\client\hooks\spawn\spawn_runtime.cpp" />
     <ClCompile Include="src\client\hooking\detour.cpp" />
     <ClCompile Include="src\client\hooking\detour\protected_detour_uninstall.cpp" />
     <ClCompile Include="src\client\hooking\detour\transaction\detour_thread_transaction.cpp" />
@@ -474,6 +478,7 @@
     <ClCompile Include="src\server\ui\runtime\server_ui_module_runtime.cpp" />
     <ClCompile Include="src\server\ui\activity_override\activity_override_panel.cpp" />
     <ClCompile Include="src\server\ui\activity_override\activity_override_lists.cpp" />
+    <ClCompile Include="src\server\ui\spawn\spawn_panel.cpp" />
     <ClCompile Include="src\server\transport\bap_listener.cpp" />
     <ClCompile Include="src\server\bap\bap_route.cpp" />
     <ClCompile Include="src\server\bap\plaintext.cpp" />
@@ -766,6 +771,9 @@
     <ClInclude Include="src\client\movement\movement_settings_store.h" />
     <ClInclude Include="src\client\ui\player\player_panel.h" />
     <ClInclude Include="src\client\player\player_settings_store.h" />
+    <ClInclude Include="src\client\spawn\spawn_keybind_store.h" />
+    <ClInclude Include="src\client\content\entity_names\entity_name_cache.h" />
+    <ClInclude Include="src\client\content\entity_names\localized_aliases.h" />
     <ClInclude Include="src\client\hooks\noclip\runtime.h" />
     <ClInclude Include="src\client\hooks\sword_skate\sword_skate.h" />
     <ClInclude Include="src\client\hooks\fly\fly.h" />
@@ -773,6 +781,7 @@
     <ClInclude Include="src\client\input\window_focus.h" />
     <ClInclude Include="src\client\hooks\teleport\internal.h" />
     <ClInclude Include="src\client\hooks\teleport\runtime.h" />
+    <ClInclude Include="src\client\hooks\spawn\spawn_runtime.h" />
     <ClInclude Include="src\client\ui\movement\movement_panel.h" />
     <ClInclude Include="src\client\runtime\internal.h" />
     <ClInclude Include="src\client\runtime\host\game_host_classification.h" />
@@ -949,6 +958,7 @@
     <ClInclude Include="src\server\ui\runtime\server_ui_module_runtime.h" />
     <ClInclude Include="src\server\ui\activity_override\activity_override_panel.h" />
     <ClInclude Include="src\server\ui\activity_override\activity_override_lists.h" />
+    <ClInclude Include="src\server\ui\spawn\spawn_panel.h" />
     <ClInclude Include="src\server\bap\runtime.h" />
     <ClInclude Include="src\server\bap\internal.h" />
     <ClInclude Include="src\server\bap\encrypted\internal.h" />
